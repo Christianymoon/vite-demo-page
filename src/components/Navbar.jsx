@@ -8,7 +8,7 @@ export function Navbar() {
 
 
   const links = [
-    { name: "Home", path: "/home" },
+    { name: "Home", path: "/" },
     { name: "Servicios", path: "/services" },
     { name: "Contacto", path: "/contact" },
 
