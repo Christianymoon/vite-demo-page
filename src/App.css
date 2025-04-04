@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+:root {
+  --background-color: #000000;
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(1000%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes letterSpacing {
+  0% {
+    letter-spacing: 0;
+  }
+  100% {
+    letter-spacing: 0.5em;
+  }
+}
+
+@keyframes openSidebar {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@font-face {
+  font-family: 'Butler';
+  src: url("assets/fonts/Butler_Regular.otf");
+}
+
+.letter-spacing {
+  animation: 2s letterSpacing ease-out forwards;
+  animation-delay: 0s 
+}
+
+
+.hover:hover {
+  transform: translateY(-15%);
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar {
+  z-index: 9999;
+  animation: openSidebar 0.5s ease-out forwards;
+}
+
+.navhover:hover {
+  transform: translateY(3%);
+  transition: all 0.3s ease-in-out;
+}
+
+.mainbutton:hover {
+  cursor: pointer;
+}
+
+.FirstFont {
+  font-family: 'Butler', sans-serif;
+}
+
+.hero {
+  animation: slideDown 1s ease-out forwards;
+}
+
