@@ -29,12 +29,12 @@ export function Navbar() {
         <img className="h-10 w-auto object-contain" src={Logo} alt="Logo" />
       </div>
       <ul
-        className={`navbar FirstFont bg-black text-white md:flex md:flex-row md:justify-center md:items-center md:w-full md:h-16 md:p-10 md:relative
-                ${isOpen ? "flex" : "hidden"} flex-col p-20 w-1/2 h-screen absolute justify-center items-center top-12 md:top-0
+        className={`navbar FirstFont bg-black text-white md:flex md:flex-row md:justify-center md:items-center md:w-full md:h-16 md:p-9 md:relative
+                ${isOpen ? "flex" : "hidden"} flex-col w-1/2 h-screen absolute justify-center items-center top-12 md:top-0
                 `}
       >
         {links.map((link) => (
-          <li className="navhover p-5 md:pl-30 md:pr-30 md:py-10 hover:bg-gray-800" key={link.name}>
+          <li className="navhover p-5 md:pl-30 md:pr-30 hover:bg-gray-800" key={link.name}>
             <Link
               to={link.path}
               onClick={() => setIsOpen(false)} // Close navbar on click
