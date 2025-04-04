@@ -69,3 +69,8 @@
   animation: slideDown 1s ease-out forwards;
 }
 
+@media (max-width: 768px) {
+  .letter-spacing {
+    animation: none;
+  }
+}

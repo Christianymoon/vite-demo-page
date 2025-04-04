@@ -10,9 +10,9 @@ import logo from '../assets/logo.png';
 export function Home() {
     return (
 
-        <div className="home FirstFont bg-gray-800 text-white flex flex-col justify-center items-center h-screen">
+        <div className="home FirstFont bg-gray-800 text-white flex flex-col justify-start items-center h-screen">
             <div className="hero text-center flex flex-col jusify-center items-center p-20">
-                <img src={logo} alt="Logo" className="rounded-full w-1/2 md:w-1/16 h-auto" />
+                <img src={logo} alt="Logo" className="rounded-full w-25 md:w-1/16 h-auto" />
                 <h1 className="text-3xl pb-15"></h1>
                 <h2 className="text-2xl letter-spacing">IMPRENTA Y DISEÑO GRAFICO</h2>
                 <p className="text-xl pt-10">Diseño de todo tipo de productos impresos y digitales.
@@ -22,7 +22,7 @@ export function Home() {
                 <div className="pt-10">
                     <button 
                         onClick={() => window.location.href = '/services'} 
-                        className="mainbutton bg-gray-800 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+                        className="mainbutton bg-black text-white font-bold py-2 px-4 rounded-xl hover:text-black hover:bg-white"
                     >
                         Servicios
                     </button>

@@ -2,6 +2,7 @@ import { Card } from "../components/Card";
 import Tag from "../assets/image1.jpg";
 import Poster from "../assets/lanadelreyposter.jpg";
 import Desingner from "../assets/designer.jpg";
+import { Link } from "react-router-dom";
 
 export function Services() {
 
@@ -20,8 +21,13 @@ export function Services() {
 
       <section className="mt-8">
         <h1 className="text-2xl pb-5">Impresión Digital</h1>
-        <p className="text-base text-wrap w-200">La impresión digital es un proceso de impresión que utiliza tecnología digital para transferir imágenes y texto directamente a una variedad de soportes. Este método es ideal para tiradas cortas y personalización.</p>
-        <p className="text-base text-wrap w-200">Ofrecemos impresión digital de alta calidad en una variedad de formatos, incluyendo folletos, tarjetas de presentación, carteles y más. Nuestro equipo está listo para ayudarte a llevar tus ideas a la realidad.</p>
+        <p className="text-base text-wrap md:w-200">La impresión digital es un proceso de impresión que utiliza tecnología digital para transferir imágenes y texto directamente a una variedad de soportes. Este método es ideal para tiradas cortas y personalización.</p>
+        <p className="text-base text-wrap md:w-200">Ofrecemos impresión digital de alta calidad en una variedad de formatos, incluyendo folletos, tarjetas de presentación, carteles y más. Nuestro equipo está listo para ayudarte a llevar tus ideas a la realidad.</p>
+        <br />
+        <h1>Contactanos para una compra personalizada</h1>
+          <button className="mainbutton rounded-lg bg-gray-800 text-white px-4 py-2 mt-4 hover:bg-gray-700 transition duration-300 ease-in-out">
+            <Link key="contactfromservices" to="/contact">Contactanos</Link>
+          </button>
 
         <div className="cards flex flex-col md:flex-row items-center mt-10">
           {
